@@ -609,7 +609,7 @@ export default function App() {
 {view === "analytics" && Analytics()}
 {view === "settings" && Settings()}
     </div>
-    {showForm && <Form />}
+    {showForm && Form()}
     {toast && <div style={{ position: "fixed", bottom: 20, right: 20, background: C.gold, color: C.bg, padding: "8px 18px", fontSize: 12, fontWeight: 700, letterSpacing: 1, fontFamily: font, zIndex: 300, borderRadius: 2 }}>{toast}</div>}
   </div>);
 }
