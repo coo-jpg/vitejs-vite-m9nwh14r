@@ -604,10 +604,10 @@ export default function App() {
       </div>
     </div>
     <div style={{ padding: "18px 20px" }}>
-      {view === "dashboard" && <Dashboard />}
-      {view === "detail" && <Detail />}
-      {view === "analytics" && <Analytics />}
-      {view === "settings" && <Settings />}
+{view === "dashboard" && Dashboard()}
+{view === "detail" && Detail()}
+{view === "analytics" && Analytics()}
+{view === "settings" && Settings()}
     </div>
     {showForm && <Form />}
     {toast && <div style={{ position: "fixed", bottom: 20, right: 20, background: C.gold, color: C.bg, padding: "8px 18px", fontSize: 12, fontWeight: 700, letterSpacing: 1, fontFamily: font, zIndex: 300, borderRadius: 2 }}>{toast}</div>}
